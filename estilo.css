@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #c71585;
+}
+
+#malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ramo {
+  background-color: #ffc0cb;
+  border: 2px solid #c71585;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.ramo.bloqueado {
+  background-color: #ffe4e1;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.ramo.aprobado {
+  background-color: #ff69b4;
+  color: white;
+  text-decoration: line-through;
+  transform: scale(0.98);
+}
