@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malla Interactiva - Contador Público</title>
-  <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <title>Malla Interactiva Contador Público</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <h1>Malla Interactiva - Contador Público</h1>
-  <div id="malla"></div>
-  <script src="script.js"></script>
+    <h1>Contador Público</h1>
+    <div id="progreso" class="progreso">
+        Carrera: <span id="porcentaje">0%</span> completada.
+    </div>
+
+    <div class="contenedor">
+        <!-- PRIMER AÑO -->
+        <div class="modulo">
+            <h2>Primer Año</h2>
+            <div class="cuatrimestre">
+                <h3>Primer Cuatrimestre</h3>
+                <div class="materia bloqueada" data-codigo="CP03" data-abre="CP07">Contabilidad Elemental (CP03)</div>
+                <div class="materia bloqueada" data-codigo="CP04" data-abre="CP08">Matemática I (CP04)</div>
+                <div class="materia bloqueada" data-codigo="CP05" data-abre="CP10">Administración I (CP05)</div>
+                <div class="materia bloqueada" data-codigo="CP06" data-abre="CP14">Introducción a la Economía (CP06)</div>
+            </div>
+            <div class="cuatrimestre">
+                <h3>Segundo Cuatrimestre</h3>
+                <div class="materia bloqueada" data-codigo="CP07" data-abre="CP11">Contabilidad Básica (CP07)</div>
+                <div class="materia bloqueada" data-codigo="CP08" data-abre="CP12">Matemática II (CP08)</div>
+                <div class="materia bloqueada" data-codigo="CP09" data-abre="CP13">Introducción a las Ciencias Sociales (CP09)</div>
+                <div class="materia bloqueada" data-codigo="CP10" data-abre="CP15-2">Administración II (CP10)</div>
+            </div>
+        </div>
+
+        <!-- SEGUNDO AÑO -->
+        <div class="modulo">
+            <h2>Segundo Año</h2>
+            <div class="cuatrimestre">
+                <h3>Primer Cuatrimestre</h3>
+                <div class="materia bloqueada" data-codigo="CP11" data-abre="CP16">Contabilidad Superior I (CP11)</div>
+                <div class="materia bloqueada" data-codigo="CP12" data-abre="CP22">Estadística (CP12)</div>
+                <div class="materia bloqueada" data-codigo="CP13" data-abre="CP17">Derecho Privado (CP13)</div>
+                <div class="materia bloqueada" data-codigo="CP14" data-abre="CP18">Microeconomía (CP14)</div>
+            </div>
+            <div class="cuatrimestre">
+                <h3>Segundo Cuatrimestre</h3>
+                <div class="materia bloqueada" data-codigo="CP15-2" data-abre="CP21">Tecnologías de la Información (CP15-2)</div>
+                <div class="materia bloqueada" data-codigo="CP16" data-abre="CP19">Contabilidad Superior II (CP16)</div>
+                <div class="materia bloqueada" data-codigo="CP17" data-abre="CP23">Derecho Público (CP17)</div>
+                <div class="materia bloqueada" data-codigo="CP18" data-abre="CP20">Macroeconomía (CP18)</div>
+            </div>
+        </div>
+
+        <!-- TERCER AÑO -->
+        <div class="modulo">
+            <h2>Tercer Año</h2>
+            <div class="cuatrimestre">
+                <h3>Primer Cuatrimestre</h3>
+                <div class="materia bloqueada" data-codigo="CP19" data-abre="CP25,CP27,CP33">Contabilidad Superior III (CP19)</div>
+                <div class="materia bloqueada" data-codigo="CP20" data-abre="CP28,CP34">Finanzas Públicas (CP20)</div>
+                <div class="materia bloqueada" data-codigo="CP21">Sistemas de Información (CP21)</div>
+                <div class="materia bloqueada" data-codigo="CP22" data-abre="CP24">Cálculo Financiero (CP22)</div>
+            </div>
+            <div class="cuatrimestre">
+                <h3>Segundo Cuatrimestre</h3>
+                <div class="materia bloqueada" data-codigo="CP23" data-abre="CP29">Derecho Laboral (CP23)</div>
+                <div class="materia bloqueada" data-codigo="CP24">Administración Financiera (CP24)</div>
+                <div class="materia bloqueada" data-codigo="CP25" data-abre="CP30">Costos (CP25)</div>
+                <div class="materia bloqueada" data-codigo="CP26">Historia Económica y Social (CP26)</div>
+            </div>
+        </div>
+
+        <!-- CUARTO AÑO -->
+        <div class="modulo">
+            <h2>Cuarto Año</h2>
+            <div class="cuatrimestre">
+                <h3>Primer Cuatrimestre</h3>
+                <div class="materia bloqueada" data-codigo="CP27">Análisis e Interpretación de Estados Contables (CP27)</div>
+                <div class="materia bloqueada" data-codigo="CP28" data-abre="CP31">Impuestos I (CP28)</div>
+                <div class="materia bloqueada" data-codigo="CP29" data-abre="CP32">Derecho Societario (CP29)</div>
+                <div class="materia bloqueada" data-codigo="CP30">Contabilidad de Gestión (CP30)</div>
+            </div>
+            <div class="cuatrimestre">
+                <h3>Segundo Cuatrimestre</h3>
+                <div class="materia bloqueada" data-codigo="CP31" data-abre="CP39,CP40">Impuestos II (CP31)</div>
+                <div class="materia bloqueada" data-codigo="CP32" data-abre="CP37">Derecho Concursal (CP32)</div>
+                <div class="materia bloqueada" data-codigo="CP33" data-abre="CP35">Auditoría I (CP33)</div>
+                <div class="materia bloqueada" data-codigo="CP34">Contabilidad Gubernamental (CP34)</div>
+            </div>
+        </div>
+
+        <!-- QUINTO AÑO -->
+        <div class="modulo">
+            <h2>Quinto Año</h2>
+            <div class="cuatrimestre">
+                <h3>Primer Cuatrimestre</h3>
+                <div class="materia bloqueada" data-codigo="CP35" data-abre="CP39,CP40">Auditoría II (CP35)</div>
+                <div class="materia bloqueada" data-codigo="CP36" data-abre="CP40">Metodología de la Investigación (CP36)</div>
+                <div class="materia bloqueada" data-codigo="CP37">Taller de Integración Jurídico Contable (CP37)</div>
+                <div class="materia bloqueada" data-codigo="CP38">Electiva I (CP38)</div>
+            </div>
+            <div class="cuatrimestre">
+                <h3>Segundo Cuatrimestre</h3>
+                <div class="materia bloqueada" data-codigo="CP39">Práctica Profesional (CP39)</div>
+                <div class="materia bloqueada" data-codigo="CP40">Seminario Contable (CP40)</div>
+                <div class="materia bloqueada" data-codigo="CP41">Electiva II (CP41)</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
