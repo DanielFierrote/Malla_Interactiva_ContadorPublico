@@ -1,7 +1,7 @@
-// Datos de la malla. Si editás desde "Administrar", descargá este archivo de nuevo y reemplazalo en GitHub.
+// Datos de la malla. Se actualiza desde "Administrar" en la página.
 window.MALLA_DATOS = {
   "titulo": "Contador Público",
-  "actualizado": 0,
+  "actualizado": 1794338974526,
   "anios": [
     {
       "nombre": "Introductorio",
