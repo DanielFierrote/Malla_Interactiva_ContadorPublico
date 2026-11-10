@@ -1,7 +1,7 @@
 // Datos de la malla. Se actualiza desde "Administrar" en la página.
 window.MALLA_DATOS = {
   "titulo": "Contador Público",
-  "actualizado": 1794345445385,
+  "actualizado": 1794345452078,
   "anios": [
     {
       "nombre": "Introductorio",
@@ -422,6 +422,7 @@ window.MALLA_DATOS = {
     "CP15-2": 10,
     "CP22": 9,
     "CP23": 6,
-    "CP21": 9
+    "CP21": 9,
+    "Taller": 10
   }
 };
