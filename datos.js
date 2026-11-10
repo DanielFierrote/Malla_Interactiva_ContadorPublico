@@ -1,7 +1,7 @@
 // Datos de la malla. Se actualiza desde "Administrar" en la página.
 window.MALLA_DATOS = {
   "titulo": "Contador Público",
-  "actualizado": 1794345566312,
+  "actualizado": 1794345530003,
   "anios": [
     {
       "nombre": "Introductorio",
@@ -20,16 +20,6 @@ window.MALLA_DATOS = {
               "requiere": []
             }
           ]
-        },
-        {
-          "nombre": "Taller",
-          "materias": [
-            {
-              "codigo": "LE",
-              "nombre": "Lengua Extranjera",
-              "requiere": []
-            }
-          ]
         }
       ]
     },
@@ -42,31 +32,22 @@ window.MALLA_DATOS = {
             {
               "codigo": "CP03",
               "nombre": "Contabilidad Elemental",
-              "requiere": [
-                "CP02"
-              ]
+              "requiere": []
             },
             {
               "codigo": "CP04",
               "nombre": "Matemática I",
-              "requiere": [
-                "CP01"
-              ]
+              "requiere": []
             },
             {
               "codigo": "CP05",
               "nombre": "Administración I",
-              "requiere": [
-                "CP02"
-              ]
+              "requiere": []
             },
             {
               "codigo": "CP06",
               "nombre": "Introducción a la Economía",
-              "requiere": [
-                "CP02",
-                "CP01"
-              ]
+              "requiere": []
             }
           ]
         },
@@ -396,8 +377,8 @@ window.MALLA_DATOS = {
     "CP14": "aprobada",
     "CP15-2": "aprobada",
     "CP22": "aprobada",
-    "CP21": "aprobada",
-    "LE": "aprobada"
+    "CP23": "aprobada",
+    "CP21": "aprobada"
   },
   "notas": {
     "CP01": 8,
@@ -419,7 +400,7 @@ window.MALLA_DATOS = {
     "CP14": 8,
     "CP15-2": 10,
     "CP22": 9,
-    "CP21": 9,
-    "LE": 10
+    "CP23": 6,
+    "CP21": 9
   }
 };
