@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Malla Interactiva Contador Público</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1 id="titulo">Contador Público</h1>
+    <div id="progreso" class="progreso">
+        Carrera: <span id="porcentaje">0%</span> completada.
+        <span id="promedio" hidden>Promedio: <b id="promedio-valor"></b></span>
+    </div>
+
+    <div class="barra-herramientas">
+        <button type="button" id="btn-guia" class="btn-guia" aria-pressed="true">Guía de correlativas: activada</button>
+        <button type="button" id="btn-admin">⚙ Administrar</button>
+    </div>
+    <p id="estado-github" class="estado-github" role="status" hidden></p>
+    <p id="ayuda-guia" class="ayuda-guia">
+        Pasá el mouse (o tocá una vez en el celu) sobre una materia:
+        <span class="muestra muestra-req"></span> la necesita
+        <span class="muestra muestra-abre"></span> la habilita
+    </p>
+
+    <!-- La malla se arma sola a partir de datos.js -->
+    <div class="contenedor" id="malla"></div>
+
+    <!-- Apartado de administración: solo desde acá se edita -->
+    <div id="admin" class="admin-capa" hidden>
+        <div class="admin-panel" role="dialog" aria-modal="true" aria-labelledby="admin-titulo">
+            <div class="admin-cabecera">
+                <h2 id="admin-titulo">Administrar malla</h2>
+                <button type="button" class="btn-cerrar" id="admin-cerrar" aria-label="Cerrar">✕</button>
+            </div>
+            <div id="admin-contenido" class="admin-contenido"></div>
+        </div>
+    </div>
+
+    <script src="datos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
