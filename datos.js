@@ -1,7 +1,7 @@
 // Datos de la malla. Se actualiza desde "Administrar" en la página.
 window.MALLA_DATOS = {
   "titulo": "Contador Público",
-  "actualizado": 1794339200077,
+  "actualizado": 1794339209467,
   "anios": [
     {
       "nombre": "Introductorio",
@@ -357,11 +357,17 @@ window.MALLA_DATOS = {
       ]
     },
     {
-      "nombre": "Nuevo año",
+      "nombre": "Sexto Año",
       "cuatrimestres": [
         {
           "nombre": "Primer Cuatrimestre",
-          "materias": []
+          "materias": [
+            {
+              "codigo": "NUEVA42",
+              "nombre": "Nueva materia",
+              "requiere": []
+            }
+          ]
         },
         {
           "nombre": "Segundo Cuatrimestre",
