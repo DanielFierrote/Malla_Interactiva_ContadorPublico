@@ -1,7 +1,7 @@
 // Datos de la malla. Se actualiza desde "Administrar" en la página.
 window.MALLA_DATOS = {
   "titulo": "Contador Público",
-  "actualizado": 1794340599040,
+  "actualizado": 1794345276012,
   "anios": [
     {
       "nombre": "Introductorio",
@@ -32,22 +32,31 @@ window.MALLA_DATOS = {
             {
               "codigo": "CP03",
               "nombre": "Contabilidad Elemental",
-              "requiere": []
+              "requiere": [
+                "CP02"
+              ]
             },
             {
               "codigo": "CP04",
               "nombre": "Matemática I",
-              "requiere": []
+              "requiere": [
+                "CP01"
+              ]
             },
             {
               "codigo": "CP05",
               "nombre": "Administración I",
-              "requiere": []
+              "requiere": [
+                "CP02"
+              ]
             },
             {
               "codigo": "CP06",
               "nombre": "Introducción a la Economía",
-              "requiere": []
+              "requiere": [
+                "CP02",
+                "CP01"
+              ]
             }
           ]
         },
@@ -81,6 +90,19 @@ window.MALLA_DATOS = {
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "nombre": "Nuevo año",
+      "cuatrimestres": [
+        {
+          "nombre": "Primer Cuatrimestre",
+          "materias": []
+        },
+        {
+          "nombre": "Segundo Cuatrimestre",
+          "materias": []
         }
       ]
     },
@@ -355,31 +377,6 @@ window.MALLA_DATOS = {
           ]
         }
       ]
-    },
-    {
-      "nombre": "Sexto Año",
-      "cuatrimestres": [
-        {
-          "nombre": "Primer Cuatrimestre",
-          "materias": [
-            {
-              "codigo": "676767",
-              "nombre": "Hola amor",
-              "requiere": []
-            }
-          ]
-        },
-        {
-          "nombre": "Segundo Cuatrimestre",
-          "materias": [
-            {
-              "codigo": "696969",
-              "nombre": "Como estas",
-              "requiere": []
-            }
-          ]
-        }
-      ]
     }
   ],
   "estado": {
@@ -403,7 +400,8 @@ window.MALLA_DATOS = {
     "CP15-2": "aprobada",
     "CP22": "aprobada",
     "CP23": "aprobada",
-    "CP21": "aprobada"
+    "CP21": "aprobada",
+    "CP19": "aprobada"
   },
   "notas": {
     "CP01": 8,
